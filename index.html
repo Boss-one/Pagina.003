@@ -66,6 +66,14 @@
         </div>
         <div class="flex flex-1 justify-end gap-4 md:gap-8">
           <nav class="flex items-center gap-4 md:gap-9">
+            <!--Botn de servicios-->
+            <button
+              onclick="showPage('solution-section')"
+              class="text-[#141414] text-sm md:text-base font-medium leading-normal hover:text-blue-600 transition duration-300 ease-in-out"
+              aria-label="Ir a la página de Soluciones"
+            >
+              Servicios
+            </button>
             <button
               onclick="showPage('app-section')"
               class="text-[#141414] text-sm md:text-base font-medium leading-normal hover:text-blue-600 transition duration-300 ease-in-out"
@@ -74,25 +82,18 @@
               Producto
             </button>
             <button
-              onclick="showPage('solution-section')"
-              class="text-[#141414] text-sm md:text-base font-medium leading-normal hover:text-blue-600 transition duration-300 ease-in-out"
-              aria-label="Ir a la página de Soluciones"
-            >
-              Soluciones
-            </button>
-            <button
               onclick="showPage('demo-section')"
               class="text-[#141414] text-sm md:text-base font-medium leading-normal hover:text-blue-600 transition duration-300 ease-in-out"
               aria-label="Ir a la página de Recursos"
             >
-              Recursos
+              Conócenos
             </button>
             <button
               onclick="showPage('contact-section')"
               class="text-[#141414] text-sm md:text-base font-medium leading-normal hover:text-blue-600 transition duration-300 ease-in-out"
               aria-label="Ir a la página de Precios"
             >
-              Precios
+              Contacto
             </button>
           </nav>
           <button
@@ -109,31 +110,33 @@
         <!-- Home Page Section -->
         <section id="home-section" class="page-section pt-20 bg-white min-h-screen active">
           <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
-            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="layout-content-container flex flex-col max-w-[1300px] flex-1">
               <div class="@container">
                 <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
-                    style='background-image: url("https://placehold.co/1200x600/e0f7fa/007bff?text=Software+HEALTSCOPEAI+en+uso");'
-                  ></div>
+                  <img
+                    src="imagenes/imagen de primera pagina HEALTSCOPEAI.jpg"
+                    alt="Software HEALTSCOPEAI en uso"
+                    class="w-full aspect-video object-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+                  />
                   <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
                     <div class="flex flex-col gap-2 text-left">
                       <h1
                         class="text-[#141414] text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                       >
-                        Revoluciona la Atención Médica con Insights Impulsados por IA
+                      OPTIMIZA EL FLUJO DE TRABAJO DE TU EMPRESA O CLÍNICA
                       </h1>
                       <h2 class="text-[#141414] text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                        HEALTSCOPEAI potencia a los profesionales de la salud con soluciones de IA de vanguardia, mejorando la precisión diagnóstica, optimizando flujos de trabajo y mejorando los resultados para los pacientes.
+                        HEALTSCOPEAI es una startup que impulsa la automatización con inteligencia artificial para optimizar el flujo de trabajo de 
+                        tu empresa o clínica, y mejorar la experiencia de tus clientes.
                       </h2>
                     </div>
-                    <button
+                    <!--<button
                       onclick="showPage('demo-section')"
                       class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-gray-800 transition duration-300 ease-in-out"
                       aria-label="Solicitar una demo"
                     >
                       <span class="truncate">Solicita una demo</span>
-                    </button>
+                    </button>-->
                   </div>
                 </div>
               </div>
@@ -198,8 +201,39 @@
         <section id="solution-section" class="page-section pt-20 bg-gray-50 min-h-screen">
           <div class="py-20 px-4">
             <div class="container mx-auto">
+              <div class="@container">
+                <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
+                  <img 
+                    src="imagenes/imagen automatización.jpg" 
+                    alt="Software HEALTSCOPEAI en uso"
+                    class="w-full aspect-video object-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+                  />
+                  <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+                    <div class="flex flex-col gap-2 text-left">
+                      <h1
+                        class="text-[#141414] text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                      >
+                        Automatización con Agentes IA
+                      </h1>
+                      <h2 class="text-[#141414] text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                        <p><strong>¿Cansado de las tareas repetitivas que hacen perder tiempo y dinero a tu empresa o clínica?</strong></p>
+                        <p>La automatización con agentes inteligentes (IA) acelera procesos rutinarios, liberando a tu equipo para que se enfoque en tareas estratégicas de mayor valor.</p>
+                        <p>Con nuestro agente IA, no solo optimizas tus operaciones, sino que también ofreces experiencias excepcionales a tus clientes, con atención rápida, precisa y disponible 24/7.</p>  
+                        <p>Diferénciate de tu competencia, ahorra tiempo y reduce costos con nuestra solución de automatización inteligente.</p>
+                      </h2>
+                    </div>
+                    <!--<button
+                      onclick="showPage('demo-section')"
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-gray-800 transition duration-300 ease-in-out"
+                      aria-label="Solicitar una demo"
+                    >
+                      <span class="truncate">Solicita una demo</span>
+                    </button>-->
+                  </div>
+                </div>
+              </div>
               <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">
-                Nuestra Solución: Beneficios para Clínicas
+                Beneficios que generas gracias a nuestros servicios
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
                 <!-- Benefit 1: Diagnóstico asistido por IA -->
@@ -210,9 +244,9 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Diagnóstico asistido por IA</h3>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Disponibilidad 24/7</h3>
                     <p class="text-gray-700 leading-relaxed">
-                      Mejora la precisión diagnóstica y reduce el tiempo de consulta con nuestro motor de IA que analiza datos clínicos y sugiere posibles diagnósticos.
+                      Los sistemas automatizados pueden funcionar todo el día sin descanso, atendiendo a los usuarios en cualquier momento.
                     </p>
                   </div>
                 </div>
@@ -224,37 +258,35 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Fidelización de pacientes</h3>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Mejora en la experiencia del usuario</h3>
                     <p class="text-gray-700 leading-relaxed">
-                      Ofrece una experiencia superior al paciente con recordatorios automáticos, acceso fácil a información y comunicación fluida, aumentando su lealtad.
+                      Los usuarios reciben respuestas rápidas, precisas y sin esperas, lo que mejora su percepción del servicio.
                     </p>
                   </div>
                 </div>
                 <!-- Benefit 3: Seguimiento post-consulta -->
                 <div class="bg-white p-8 rounded-xl shadow-lg flex items-start space-x-6 transform hover:scale-105 transition duration-300 ease-in-out">
-                  <div class="text-5xl text-purple-600 flex-shrink-0 size-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M16 11V7h-4V3H8v4H4v4h4v4h4v4h4v-4h4v-4h-4z"/>
-                    </svg>
+                  <div class="flex-shrink-0">
+                    <img src="imagenes/relog.png" alt="reloj" class="w-16 h-16 object-contain">
                   </div>
+
                   <div>
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Seguimiento post-consulta</h3>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Ahorro de tiempo</h3>
                     <p class="text-gray-700 leading-relaxed">
-                      Mantén un seguimiento proactivo de la evolución de tus pacientes, con alertas personalizadas y recomendaciones para asegurar su bienestar continuo.
+                      La IA ejecuta tareas repetitivas de forma automática, lo que reduce tiempos operativos y acelera procesos clave.
                     </p>
                   </div>
                 </div>
                 <!-- Benefit 4: Integración con sistemas públicos -->
                 <div class="bg-white p-8 rounded-xl shadow-lg flex items-start space-x-6 transform hover:scale-105 transition duration-300 ease-in-out">
-                  <div class="text-5xl text-teal-600 flex-shrink-0 size-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M17 7h-4V3H7v4H3v4h4v4h4v4h4v-4h4v-4h-4zM9 9h6v6H9V9z"/>
-                    </svg>
+                  <div class="flex-shrink-0">
+                    <img src="imagenes/productividad.png" alt="reloj" class="w-16 h-16 object-contain">
                   </div>
+    
                   <div>
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Integración con sistemas públicos</h3>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Mayor productividad del equipo</h3>
                     <p class="text-gray-700 leading-relaxed">
-                      Conexión fluida con SISMED y SISGALENPLUS para una gestión de datos unificada y cumplimiento normativo sin esfuerzo.
+                      Al liberar al personal de tareas rutinarias, pueden enfocarse en actividades estratégicas que aportan mayor valor.
                     </p>
                   </div>
                 </div>
@@ -262,20 +294,157 @@
             </div>
           </div>
         </section>
-
         <!-- App Page Section -->
         <section id="app-section" class="page-section pt-20 bg-blue-50 min-h-screen">
+          <div style="text-align: center;">
+              <img src="imagenes/logo de producto 1.2.png" alt="producto 1.2" style="width: 100%; height: 400px; object-fit: cover;">
+          </div>
           <div class="container mx-auto px-4 text-center py-20">
             <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-8">
-              Descubre nuestra App para Pacientes
+              Qué es CitaFácil AI
+              <!--Descubre nuestra App para Pacientes-->
+              <!--Asistente clínico automatizado con IA-->
             </h2>
             <p class="text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
-              Nuestra aplicación móvil está diseñada para empoderar a los pacientes, ofreciéndoles control total sobre su salud.
+              CitaFácil AI es un agente con inteligente artificial desarrollado por la startup HealtScopeAI enfocado en automatizar el proceso 
+              de agendamiento de citas en clínicas sea rapida. Su objetivo es eliminar las largas esperas al teléfono y facilitar que los pacientes 
+              puedan programar sus citas médicas de forma rápida, eficiente y sin complicaciones.
+              Este asistente con inteligencia artificial permite a los usuarios reservar una cita sin necesidad de hablar con un recepcionista, 
+              ahorrando tiempo tanto al personal como a los pacientes. Está enfocado en brindar una experiencia personalizada, ágil y centrada 
+              en las necesidades del usuario. 
+            <!--Nuestra aplicación móvil está diseñada para empoderar a los pacientes, ofreciéndoles control total sobre su salud.-->
             </p>
+            <!--Para explicar el funcionamiento-->
+              <head>
+                <meta charset="UTF-8">
+                <title>Cómo Funciona</title>
+                <style>
+                  body {
+                    font-family:  sans-serif;
+                  }
+                  .como-funciona {
+                    max-width: 500px;
+                    margin: 40px auto;
+                  }
+                  .como-funciona h2 {
+                  font-size: 22px;
+                  margin-bottom: 20px;
+                  color: #1B39C4;       /* Azul igual al de "Qué es CitaFácil AI" */
+                  font-weight: bold;
+                }
+                  .paso {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                  }
+                  .paso img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 15px;
+                  }
+                </style>
+              </head>
+              <body>
+                <div class="como-funciona">
+                  <h2>Cómo Funciona</h2>
+
+                  <div class="paso">
+                    <img src="imagenes/whatsapp logo.png" alt="Whatsapp">
+                    <span>El paciente envía un mensaje (texto o voz) por WhatsApp.</span>
+                  </div>
+
+                  <div class="paso">
+                    <img src="imagenes/ai_aritifical_intelligence.png" alt="IA">
+                    <span>El agente con inteligencia artificial procesa y comprende la información enviada, y clasifica la cita médica como nueva, actualización o cancelación.</span>
+                  </div>
+
+                  <div class="paso">
+                    <img src="imagenes/google_calendar logo.png" alt="Calendario">
+                    <span>Las citas se programan automáticamente en Google Calendar.</span>
+                  </div>
+                  <!--<div class="paso">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+                    <span>El Personal Puede Reprogramar por Telegram</span>-->
+                  </div>
+                </div>
+              </body>
             <div class="mb-12 max-w-xl mx-auto overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
               <img
                 src="https://placehold.co/800x450/cceeff/007bff?text=Mockup+App+Móvil"
-                alt="Mockup App Móvil"
+                alt="Video explicativo del producto"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          <div class="py-20 px-4">
+            <div class="container mx-auto">
+              <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">
+                Beneficios
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <!-- Benefit 1: Diagnóstico asistido por IA -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex items-start space-x-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                  <div class="text-5xl text-green-600 flex-shrink-0 size-12">
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Ahorro de tiempo para pacientes y personal</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                      Al automatizar el proceso de citas, se eliminan las llamadas largas y repetitivas, reduciendo tiempos de espera y mejorando la eficiencia operativa.
+                    </p>
+                  </div>
+                </div>
+                <!-- Benefit 2: Fidelización de pacientes -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex items-start space-x-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                  <div class="text-5xl text-blue-600 flex-shrink-0 size-12">
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Disponibilidad 24/7 sin necesidad de un recepcionista</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                      Los pacientes pueden agendar citas en cualquier momento, incluso fuera del horario de atención.
+                    </p>
+                  </div>
+                </div>
+                <!-- Benefit 3: Seguimiento post-consulta -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex items-start space-x-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                  <div class="text-5xl text-purple-600 flex-shrink-0 size-12">
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Experiencia personalizada y centrada en el usuario</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                      La IA adapta sus respuestas según el tipo de solicitud (nueva cita, reprogramación o cancelación), brindando una atención más intuitiva y amigable.
+                      <!--Mantén un seguimiento proactivo de la evolución de tus pacientes, con alertas personalizadas y recomendaciones para asegurar su bienestar continuo.-->
+                    </p>
+                  </div>
+                </div>
+                <!-- Benefit 4: Integración con sistemas públicos -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex items-start space-x-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                  <div class="text-5xl text-teal-600 flex-shrink-0 size-12">
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Agendamiento rápido y sin complicaciones</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                      El sistema simplifica todo el proceso, desde recibir el mensaje por WhatsApp hasta registrar la cita automáticamente en 
+                      Google Calendar, reduciendo errores y fricciones.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#121612] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#121612] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+            <div class="mb-12 max-w-xl mx-auto overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
+              <img
+                src="https://placehold.co/800x450/cceeff/007bff?text=Mockup+App+Móvil"
+                alt="Video explicativo del producto"
                 class="w-full h-auto object-cover"
               />
             </div>
@@ -285,20 +454,76 @@
               <li>Comunicación directa con profesionales de la salud.</li>
               <li>Seguimiento de planes de tratamiento.</li>
             </ul>
-          </div>
+          </div>a-->
         </section>
 
         <!-- Demo Page Section -->
-        <section id="demo-section" class="page-section pt-20 bg-green-50 min-h-screen">
-          <div class="py-20 px-4 text-center">
+        <section id="demo-section" class="page-section pt-20 bg-gray-50 min-h-screen">
+          <div>
+              <img src="imagenes/banner conocenos8.jpg" alt="producto 1.2" 
+              style="width: 87%; height: 390px; object-fit: cover; display: block; margin: 0 auto;">
+          </div>
+          <div class="py-20 px-4 text-left text-justify">
             <div class="container mx-auto">
-              <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-8">
-                Experimenta HEALTSCOPEAI en acción
+              <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-8">
+                Las personas que hacen posible HEALTSCOPEAI
               </h2>
-              <p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
-                Te invitamos a explorar un prototipo funcional de nuestra plataforma. Descubre cómo HEALTSCOPEAI puede transformar tu clínica.
+              <p class="text-xl text-gray-700 mb-10 text-left text-justify">
+                Detrás de cada avance en HEALTSCOPEAI hay un equipo apasionado por la tecnología y la innovación. Nuestro 
+                grupo de profesionales reúne experiencia en automatización, inteligencia artificial, análisis de datos y diseño 
+                web para crear soluciones que simplifican los procesos en organizaciones y clínicas. Conoce a los líderes que 
+                impulsan nuestra visión y hacen posible nuestro compromiso de ayudar a las personas a resolver tareas repetitivas 
+                de manera más rápida y eficiente gracias a la automatización con inteligencia artificial.
               </p>
-              <div class="mb-12 max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
+              <!--Personas que conforman el equipo-->
+              <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                  <div style="text-align: center; max-width: 1200px; margin: 0 auto; padding: 20px;">
+                      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                          <div style="width: 300px; text-align: center; padding: 20px; border-radius: 8px;">
+                              <img src="aidan-hogan.jpg" alt="Royer de la Cruz" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                              <h3>Royer de la Cruz Calderon</h3>
+                              <p>Estudiante de Biología</p>
+                              <p>CEO de HEALTSCOPEAI</p>
+                          </div>
+
+                          <div style="width: 300px; text-align: center; padding: 20px; border-radius: 8px;">
+                              <img src="alejandro-jofre.jpg" alt="Ibid Ayala" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                              <h3>Ibid Luiliang Ayala Humani</h3>
+                              <p>Estudiante de Biología</p>
+                              <p>CEO de HEALTSCOPEAI</p>        
+                          </div>
+
+                          <div style="width: 300px; text-align: center; padding: 20px; border-radius: 8px;">
+                              <img src="alejandro-maass.jpg" alt="compañera" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                              <h3>Compañera</h3>
+                              <p>Estudiante de Biología</p>
+                              <p>CEO de HEALTSCOPEAI</p>
+                          </div>
+
+                          <div style="width: 300px; text-align: center; padding: 20px; border-radius: 8px;">
+                              <img src="andres-abeliuk.jpg" alt="Marcio Mallqui" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                              <h3>Marcio Olwyn Mallqui Pérez</h3>
+                              <p>Bachiller en Ciencias Físico-Matemáticas</p>
+                              <p>Voluntario Tech</p>
+                          </div>
+
+                          <div style="width: 300px; text-align: center; padding: 20px; border-radius: 8px;">
+                              <img src="angel-jimenez.jpg" alt="compañero1" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                              <h3>compañero1</h3>
+                              <p>Voluntario Tech</p>
+                          </div>
+
+                          <div style="width: 300px; text-align: center; padding: 20px; border-radius: 8px;">
+                              <img src="benjamin-bustos.jpg" alt="compañero2" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                              <h3>compañero2</h3>
+                              <p>Voluntario Tech</p>
+                          </div>
+                      </div>
+                  </div>
+              <!--<div class="mb-12 max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
                 <img
                   src="https://placehold.co/1200x675/d4edda/28a745?text=Video+Demo+o+Dashboard"
                   alt="Video Demo o Dashboard"
@@ -315,56 +540,59 @@
                 Ver demo (enlace externo)
               </a>
             </div>
-          </div>
+          </div>-->
         </section>
-
         <!-- Contact Page Section -->
         <section id="contact-section" class="page-section pt-20 bg-purple-50 min-h-screen">
           <div class="py-20 px-4 w-full">
             <div class="container mx-auto max-w-3xl bg-white p-10 rounded-xl shadow-2xl">
               <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-8">
-                Conéctate con HEALTSCOPEAI
+                Contáctanos - HEALTSCOPEAI
+                <!--Conéctate con HEALTSCOPEAI-->
               </h2>
               <p class="text-xl text-gray-700 text-center mb-10">
-                Estamos listos para conversar. Completa el formulario o pre-regístrate.
+                <!--Estamos listos para conversar. Completa el formulario o pre-regístrate.-->
+                Envíanos tus preguntas y/o solicita una reunión virtual con nuestro equipo
               </p>
 
               <!-- Contact Form -->
               <form class="space-y-6" onsubmit="submitForm(event)">
                 <div>
-                  <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Nombre Completo</label>
+                  <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Nombre Completo:</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-lg"
-                    placeholder="Tu nombre"
+                    placeholder="Tu nombre completo"
                     required
                   />
+                    <!--placeholder="Tu nombre"-->
+                    
                 </div>
                 <div>
-                  <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Correo Electrónico</label>
+                  <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Correo Electrónico:</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-lg"
-                    placeholder="tu@ejemplo.com"
+                    placeholder="tu.correo@ejemplo.com"
                     required
                   />
                 </div>
                 <div>
-                  <label for="organization" class="block text-lg font-medium text-gray-700 mb-2">Organización / Clínica</label>
+                  <label for="organization" class="block text-lg font-medium text-gray-700 mb-2">Organización / Clínica:</label>
                   <input
                     type="text"
                     id="organization"
                     name="organization"
                     class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-lg"
-                    placeholder="Nombre de tu clínica/empresa"
+                    placeholder="Nombre de tu clínica o empresa"
                   />
                 </div>
                 <div>
-                  <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Mensaje</label>
+                  <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Mensaje:</label>
                   <textarea
                     id="message"
                     name="message"
@@ -380,15 +608,15 @@
                     class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
                     aria-label="Enviar solicitud de reunión"
                   >
-                    Solicita una reunión
+                    Enviar
                   </button>
-                  <button
+                  <!--<button
                     type="button"
                     class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-green-300"
                     aria-label="Pre-regístrate como clínica aliada"
                   >
                     Pre-regístrate como clínica aliada
-                  </button>
+                  </button>-->
                 </div>
               </form>
             </div>
@@ -502,7 +730,7 @@
                                             value=""
                                         />
                                         <div class="flex items-center justify-center rounded-r-xl border-l-0 border-none bg-[#f2f2f2] pr-2">
-                                            <button
+                                           <button
                                                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                                                 aria-label="Empezar"
                                             >
